@@ -7,18 +7,18 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 </head>
-<body class="min-h-screen flex flex-col justify-between xl:max-w-7xl xl:mx-auto">
+<body class="min-h-screen flex flex-col justify-between xl:max-w-7xl xl:mx-auto bg-gray-900 text-white">
   <!-- Header -->
-  <header id="page-top" class="bg-white px-20 flex justify-between fixed top-0 left-0 w-full py-3 xl:max-w-7xl xl:left-1/2 xl:-translate-x-1/2">
+  <header id="page-top" class="bg-gray-800 px-20 flex justify-between gap-2 items-center fixed top-0 left-0 w-full py-3 xl:max-w-7xl xl:left-1/2 xl:-translate-x-1/2">
     <span class="grow-1">haritsgh</span>
     <nav class="grow-3 flex justify-around px-5 hidden md:flex">
-      <a href="./">Home</a>
-      <a href="/#about-me">About Me</a>
-      <a href="/#technical-skills">Technical Skills</a>
-      <a href="/#projects">Projects</a>
+      <a href="./" class="hover:text-blue-400 transition-colors">Home</a>
+      <a href="/#about-me" class="hover:text-blue-400 transition-colors">About Me</a>
+      <a href="/#technical-skills" class="hover:text-blue-400 transition-colors">Technical Skills</a>
+      <a href="/#projects" class="hover:text-blue-400 transition-colors">Projects</a>
     </nav>
     <a href="mailto:harits.gh1@gmail.com" 
-      class="border border-gray-300 rounded-lg px-4 py-2 hover:bg-gray-100 hover:border-gray-400 transition-colors"
+      class="border border-gray-600 rounded-lg px-4 py-2 hover:bg-gray-700 hover:border-gray-500 transition-colors"
     >
       Contact
     </a>
@@ -28,12 +28,12 @@
   <main class="mx-15 flex-grow pt-10">
     <article class="w-full">
       
-      <section id="hero" class="grid grid-cols-2 my-6">
+      <section id="hero" class="my-6 md:grid md:grid-cols-2">
         <div>
           <h1 class="text-3xl">Harits Ghiffari Hanif</h1>
-          <h2 class="text-xl">Full Stack Web Developer</h2>
-          <p>Much more of backend rather than frontend.</p>
-          <p class="text-xs">In addition of data analyst bootcamp graduate.</p>
+          <h2 class="text-xl font-semibold">Full Stack Web Developer</h2>
+          <p class="font-light">Much more of backend rather than frontend.</p>
+          <p class="text-xs font-extralight">In addition of data analyst bootcamp graduate.</p>
           <p class="text-xs">
           <div class="flex gap-6">
             <a href="https://www.linkedin.com/in/harits-ghiffari-hanif-44538020a/" target="_blank" rel="noreferrer noopener" class="ri-linkedin-box-fill">
@@ -47,8 +47,8 @@
             </a>
           </div>
         </div>
-        <div class="bg-green-500">
-          <p>my photo</p>
+        <div class="hidden md:flex md:bg-green-500">
+          <p>photo</p>
         </div>
       </section>
 
@@ -67,8 +67,9 @@
       <section id="technical-skills" class="mb-5">
         <h2 class="text-2xl mb-2">Technical Skills</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-center">
-          <div class="bg-gray-100 border rounded-lg border-gray-200">
-            <p class="text-lg">Programming Languages</p>
+
+          <div class="bg-gray-400 border rounded-lg text-black">
+            <p class="text-lg font-semibold">Programming Languages</p>
             <div class="grid grid-cols-3 text-center py-3">
               
 
@@ -96,8 +97,8 @@
             </div>
           </div>
           
-          <div class="bg-gray-100 border rounded-lg border-gray-200">
-            <p class="text-lg">Frontend</p>
+          <div class="bg-gray-400 border rounded-lg text-black">
+            <p class="text-lg font-semibold text-gray-900">Frontend</p>
             <div class="grid grid-cols-3 text-center py-3">
               
               <div class="flex flex-col items-center">
@@ -124,8 +125,8 @@
             </div>
           </div>
   
-          <div class="bg-gray-100 border rounded-lg border-gray-200">
-            <p class="text-lg">Backend</p>
+          <div class="bg-gray-400 border rounded-lg text-black">
+            <p class="text-lg font-semibold text-gray-900">Backend</p>
             <div class="grid grid-cols-3 text-center py-3">
               
               <div class="flex flex-col items-center">
@@ -137,8 +138,8 @@
             </div>
           </div>
   
-          <div class="bg-gray-100 border rounded-lg border-gray-200">
-            <p class="text-lg">Database</p>
+          <div class="bg-gray-400 border rounded-lg text-black">
+            <p class="text-lg font-semibold text-gray-900">Database</p>
             <div class="grid grid-cols-3 text-center py-3">
               
               <div class="flex flex-col items-center">
@@ -171,8 +172,8 @@
             </div>
           </div>
   
-          <div class="bg-gray-100 border rounded-lg border-gray-200">
-            <p class="text-lg">Deployment</p>
+          <div class="bg-gray-400 border rounded-lg text-black">
+            <p class="text-lg font-semibold text-gray-900">Deployment</p>
             <div class="grid grid-cols-3 text-center py-3">
               
               <div class="flex flex-col items-center">
@@ -192,8 +193,8 @@
             </div>
           </div>
   
-          <div class="bg-gray-100 border rounded-lg border-gray-200">
-            <p class="text-lg">Other</p>
+          <div class="bg-gray-400 border rounded-lg text-black">
+            <p class="text-lg font-semibold text-gray-900">Other</p>
             <div class="grid grid-cols-3 text-center  py-3">
               
               <div class="flex flex-col items-center">
@@ -250,64 +251,112 @@
       <section id="projects" class="mb-5">
         <h2 class="text-2xl mb-2">Projects</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          
-          <div class="bg-gray-100 border rounded-lg border-gray-200 p-4 flex flex-col justify-between">
-            <h3 class="text-xl font-semibold mb-2">Tournament Management Platform</h3>
-            <p class="text-gray-600 mb-3">
-              A simplistic platform for managing tournaments, including participant registration, match scheduling, and real-time score tracking.
-            </p>
-            <div class="flex gap-2 flex-wrap">
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Next.js</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Nest.js</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Prisma ORM</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">PostgreSQL</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Vercel</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Railway</span>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+          <div class="bg-gray-800 border rounded-lg border-gray-600 p-4 flex flex-col justify-between">
+
+            <div class="flex flex-col gap-2">
+              
+              <div class="flex justify-between">
+                <h3 class="text-xl font-semibold mb-2 w-3/4">Noartument</h3>
+                <span class="text-sm w-1/4 flex justify-end pt-1 text-blue-300">Jan 2026 &ndash; May 2026</span>
+              </div>
+  
+              <div class="flex gap-2 flex-wrap">
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Next.js</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Nest.js</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">TypeScript</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Prisma ORM</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">PostgreSQL</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Vercel</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Railway</span>
+              </div>
+              
+              <p class="text-gray-300 mb-3 text-justify">
+                A simplistic tournament management platform with no colorfulness in the design.
+                Features include tournament creation, participant registration, and real-time score tracking.
+              </p>
+
             </div>
+
             <div class="flex justify-end">
-              <a href="./projects/tournament-manager-platform/" class="mt-4 underline hover:text-blue-800">Details</a>
+              <a href="./projects/tournament-manager-platform/" class="mt-4 hover:text-blue-400 transition-colors">Details</a>
+            </div>
+
+          </div>
+
+          <div class="bg-gray-800 border rounded-lg border-gray-600 p-4 flex flex-col justify-between">
+            
+            <div class="flex flex-col gap-2">
+
+              <div class="flex justify-between">
+                <h3 class="text-xl font-semibold mb-2 w-3/4">Roblox Fish It! Custom Auto-fish</h3>
+                <span class="text-sm w-1/4 flex justify-end pt-1 text-blue-300">Oct 2025</span>
+              </div>
+
+              <div class="flex gap-2 flex-wrap">
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Python</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">PyAutoGUI</span>
+              </div>
+
+              <p class="text-gray-300 mb-3 text-justify">
+                A custom auto-fish script for Roblox Fish It! game.
+              </p>
+
+            </div>
+
+            <div class="flex justify-end">
+              <a href="./projects/tournament-manager-platform/" class="mt-4 hover:text-blue-400 transition-colors">Details</a>
+            </div>
+
+          </div>
+
+          <div class="bg-gray-800 border rounded-lg border-gray-600 p-4 flex flex-col justify-between">
+            
+            <div class="flex flex-col gap-2">
+
+              <div class="flex justify-between">
+                <h3 class="text-xl font-semibold mb-2 w-3/4">Shadowverse World's Beyond Daily Mission Replacement Reward Analysis</h3>
+                <span class="text-sm w-1/4 flex justify-end pt-1 text-blue-300">Aug 2025 &ndash; Nov 2025</span>
+              </div>
+
+              <div class="flex gap-2 flex-wrap">
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Spreadsheet / Excel</span>
+              </div>
+
+              <p class="text-gray-300 mb-3 text-justify">
+                An analysis on Shadowverse World's Beyond daily missions reward and when to replace the missions.
+              </p>
+
+            </div>
+
+            <div class="flex justify-end">
+              <a href="./projects/tournament-manager-platform/" class="mt-4 hover:text-blue-400 transition-colors">Details</a>
             </div>
           </div>
 
-          <div class="bg-gray-100 border rounded-lg border-gray-200 p-4 flex flex-col justify-between">
-            <h3 class="text-xl font-semibold mb-2">Roblox Fish It! Custom Auto-fish</h3>
-            <p class="text-gray-600 mb-3">
-              A custom auto-fish script for Roblox Fish It! game.
-            </p>
-            <div class="flex gap-2 flex-wrap">
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Python</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">PyAutoGUI</span>
-            </div>
-            <div class="flex justify-end">
-              <a href="./projects/tournament-manager-platform/" class="mt-4 underline hover:text-blue-800">Details</a>
-            </div>
-          </div>
+          <div class="bg-gray-800 border rounded-lg border-gray-600 p-4 flex flex-col justify-between">
+            
+            <div class="flex flex-col gap-2">
 
-          <div class="bg-gray-100 border rounded-lg border-gray-200 p-4 flex flex-col justify-between">
-            <h3 class="text-xl font-semibold mb-2">Honkai Star Rail Relic Generator & Upgrader Simulator</h3>
-            <p class="text-gray-600 mb-3">
-              A simulator for generating and max-upgrading relics in Honkai Star Rail.
-            </p>
-            <div class="flex gap-2 flex-wrap">
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Python</span>
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Jupyter Notebook</span>
-            </div>
-            <div class="flex justify-end">
-              <a href="./projects/tournament-manager-platform/" class="mt-4 underline hover:text-blue-800">Details</a>
-            </div>
-          </div>
+              <div class="flex justify-between">
+                <h3 class="text-xl font-semibold mb-2 w-3/4">Honkai Star Rail Relic Generator & Upgrader Simulator</h3>
+                <span class="text-sm w-1/4 flex justify-end pt-1 text-blue-300">Mar 2024</span>
+              </div>
 
-          <div class="bg-gray-100 border rounded-lg border-gray-200 p-4 flex flex-col justify-between">
-            <h3 class="text-xl font-semibold mb-2">Shadowverse World's Beyond Daily Mission Replacement Reward Analysis</h3>
-            <p class="text-gray-600 mb-3">
-              An analysis on Shadowverse World's Beyond daily missions reward and when to replace the missions.
-            </p>
-            <div class="flex gap-2 flex-wrap">
-              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Spreadsheet / Excel</span>
+              <div class="flex gap-2 flex-wrap">
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Python</span>
+                <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Jupyter Notebook</span>
+              </div>
+
+              <p class="text-gray-300 mb-3 text-justify">
+                A simulator for generating and max-upgrading relics from the game Honkai Star Rail.
+              </p>
+
             </div>
+
             <div class="flex justify-end">
-              <a href="./projects/tournament-manager-platform/" class="mt-4 underline hover:text-blue-800">Details</a>
+              <a href="./projects/tournament-manager-platform/" class="mt-4 hover:text-blue-400 transition-colors">Details</a>
             </div>
           </div>
 
@@ -318,7 +367,7 @@
 
   <!-- Footer -->
   <footer class="flex justify-between items-center px-2 border-t py-2">
-    <p>© 2026 Harits Ghiffari Hanif. All rights reserved.</p>
+    <p>&copy; 2026 Harits Ghiffari Hanif. All rights reserved.</p>
     <div class="flex gap-6">
       <a href="https://www.linkedin.com/in/harits-ghiffari-hanif-44538020a/" target="_blank" rel="noreferrer noopener" class="ri-linkedin-box-fill">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path></svg>

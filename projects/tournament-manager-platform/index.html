@@ -6,21 +6,144 @@
   <title>Harits's Portofolio</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="min-h-screen flex flex-col justify-between xl:max-w-7xl xl:mx-auto">
+<body class="min-h-screen flex flex-col justify-between xl:max-w-7xl xl:mx-auto bg-gray-900 text-white">
   <!-- Header -->
-  <header id="page-top" class="bg-white px-20 flex justify-between fixed top-0 left-0 w-full py-3 xl:max-w-7xl xl:left-1/2 xl:-translate-x-1/2">
+  <header id="page-top" class="bg-gray-800 px-20 flex justify-between gap-2 items-center fixed top-0 left-0 w-full py-3 xl:max-w-7xl xl:left-1/2 xl:-translate-x-1/2">
     <span class="grow-1">haritsgh</span>
     <nav class="grow-3 flex justify-around px-5 hidden md:flex">
-      <a href="/">Home</a>
-      <a href="/#about-me">About Me</a>
-      <a href="/#technical-skills">Technical Skills</a>
-      <a href="/#projects">Projects</a>
+      <a href="/" class="hover:text-blue-400 transition-colors">Home</a>
+      <a href="/#about-me" class="hover:text-blue-400 transition-colors">About Me</a>
+      <a href="/#technical-skills" class="hover:text-blue-400 transition-colors">Technical Skills</a>
+      <a href="/#projects" class="hover:text-blue-400 transition-colors">Projects</a>
     </nav>
-    <a href="mailto:harits.gh1@gmail.com" class="grow-1 flex justify-end">Contact</a>
+    <a href="mailto:harits.gh1@gmail.com" 
+      class="border border-gray-600 rounded-lg px-4 py-2 hover:bg-gray-700 hover:border-gray-500 transition-colors"
+    >
+      Contact
+    </a>
   </header>
 
   <!-- Main -->
-  <p class="mt-20">borgir</p>
+  <main class="mx-15 flex-grow pt-10">
+    <article class="my-10 flex flex-col gap-5">
+
+      <a href="/#projects" class="hover:text-blue-400 transition-colors">&larr; View other projects</a>
+      
+      <h1 class="text-3xl text-center font-bold">Noartument</h1>
+
+      <div class="flex gap-8">
+
+        <div class="flex items-center gap-2">
+          <p class="text-xs">Timeline:</p>
+          <span class="bg-gray-700 text-gray-200 text-xs px-2 py-1 rounded">Jan 2026 – May 2026</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <p class="text-xs">Live Demo:</p>
+          <a href="./">Frontend</a>
+          <a href="./">Backend</a>
+        </div>
+        
+        <div class="flex items-center gap-2">
+          <p class="text-xs">GitHub:</p>
+          <a href="./">Frontend</a>
+          <a href="./">Backend</a>
+        </div>
+
+      </div>
+      
+
+      <section id="overview">
+        <h2 class="text-xl font-semibold">Overview</h2>
+        <p>
+          A tournament management platform with no artistry in mind.
+          Features include tournament creation, participant registration, and real-time score tracking.
+        </p>
+      </section>
+
+      <section id="goal">
+        <h2 class="text-xl font-semibold">Goals</h2>
+        <p>
+          Design, develop, and maintain a software system that integrates frontend, backend, and database by myself.
+          The software is required to have a role-based authentication and authorization, be deployed for public access, and have a comprehensive documentation.
+        </p>
+      </section>
+
+      <section id="tech-stack">
+        <h2 class="text-xl font-semibold">Tech Stack</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+
+          <div class="bg-gray-800 border rounded-lg border-gray-600 px-5 py-3">
+            <p class="text-md mb-1">Frontend</p>
+
+            <div>
+              <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Next.js 16</span>
+              <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">React</span>
+              <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">TailwindCSS</span>
+              <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">TypeScript</span>
+              <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Axios</span>
+              <span class="bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Node.js</span>
+            </div>
+            
+          </div>
+
+          <div class="bg-gray-800 border rounded-lg border-gray-600 px-5 py-3">
+            <p class="text-md mb-1">Backend</p>
+
+            <div>
+              <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded">Nest.js 11</span>
+              <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded">PostgreSQL</span>
+              <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded">Prisma ORM</span>
+              <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded">Bcrypt</span>
+              <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded">JWT</span>
+              <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded">Swagger UI</span>
+              <span class="bg-red-900 text-red-200 text-xs px-2 py-1 rounded">Node.js</span>
+            </div>
+            
+          </div>
+
+          <div class="bg-gray-800 border rounded-lg border-gray-600 px-5 py-3">
+            <p class="text-md mb-1">Deployment</p>
+
+            <div>
+              <span class="bg-green-900 text-green-200 text-xs px-2 py-1 rounded">Vercel (Frontend)</span>
+              <span class="bg-green-900 text-green-200 text-xs px-2 py-1 rounded">Railway (Backend & Database)</span>
+            </div>
+            
+          </div>
+
+          <div class="bg-gray-800 border rounded-lg border-gray-600 px-5 py-3">
+            <p class="text-md mb-1">Tools</p>
+
+            <div>
+              <span class="bg-yellow-900 text-yellow-200 text-xs px-2 py-1 rounded">Postman</span>
+              <span class="bg-yellow-900 text-yellow-200 text-xs px-2 py-1 rounded">Git</span>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+
+      <section id="approach">
+        <h2 class="text-xl font-semibold">Approach</h2>
+        <ul class="list-disc list-inside pl-3">
+          <li>Single Page Application (SPA)</li>
+          <li>Component-Based Architecture</li>
+          <li>Client-Side Rendering (CSR)</li>
+          <li>Server-Side Rendering (SSR)</li>
+          <li>Static Site Generation (SSG)</li>
+          <li>Role-Based Access Control</li>
+          <li>JWT Authentication</li>
+          <li>RESTful API Design</li>
+          <li>Database Normalization</li>
+          <li>Database Seeding & Migrations</li>
+          <li>CI/CD Integration</li>
+        </ul>
+      </section>
+      
+    </article>
+   </main>
 
   <!-- Footer -->
   <footer class="flex justify-between items-center px-2 border-t py-2">
